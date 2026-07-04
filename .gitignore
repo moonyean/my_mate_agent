@@ -1,1 +1,20 @@
+# 런타임 데이터
 /workspace
+/data
+__pycache__/
+*.py[cod]
+.env
+
+# phase 런타임
+phase*/workspace/
+phase*/data/
+phase*/__pycache__/
+phase*/memory/__pycache__/
+phase*/persona/__pycache__/
+
+# core/api 캐시
+core/__pycache__/
+core/memory/__pycache__/
+core/persona/__pycache__/
+api/__pycache__/
+api/routers/__pycache__/

@@ -7,6 +7,5 @@ __all__ = [
     "Persona", "PersonaIdentity", "PersonaTone", "PersonaRules",
     "PersonaConstraints", "PersonaMemoryBinding",
     "validate_persona", "ValidationError",
-    "PersonaManager",
-    "build_persona_system_prompt",
+    "PersonaManager", "build_persona_system_prompt",
 ]

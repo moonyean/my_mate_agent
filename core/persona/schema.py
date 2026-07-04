@@ -1,24 +1,23 @@
 from __future__ import annotations
-
 from pydantic import BaseModel, Field
 
 
 class PersonaIdentity(BaseModel):
-    name: str = Field(description="캐릭터 이름")
-    role: str = Field(description="캐릭터 역할 (예: 마법사, 우주 파일럿)")
+    name: str
+    role: str
 
 
 class PersonaTone(BaseModel):
-    speech_style: str = Field(description="말투 (예: 친근하고 격식없는 말투)")
-    personality: str = Field(description="성격 (예: 호기심 많고 열정적)")
+    speech_style: str
+    personality: str
 
 
 class PersonaRules(BaseModel):
-    behavior: list[str] = Field(default_factory=list, description="행동 규칙 목록")
+    behavior: list[str] = Field(default_factory=list)
 
 
 class PersonaConstraints(BaseModel):
-    forbidden: list[str] = Field(default_factory=list, description="금지 사항 목록")
+    forbidden: list[str] = Field(default_factory=list)
 
 
 class PersonaMemoryBinding(BaseModel):
